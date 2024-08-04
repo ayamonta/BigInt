@@ -115,11 +115,6 @@ BigInt::BigInt(const BigInt& other)
     m_list.copyList(other.m_list);
 }
 
-// BigInt::~BigInt()
-// {
-//     m_list.cleanUp();
-// }
-
 bool BigInt::operator>(const BigInt& rhs) const
 {
     auto i = m_list.begin();
