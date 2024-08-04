@@ -32,12 +32,12 @@ class BigInt
     bool operator==(const BigInt& rhs) const;
 
     BigInt& operator=(const BigInt& rhs);
-    // copy constructor and default constructor created for rule of three
+    // copy constructor created for rule of three
     BigInt(const BigInt& other);
+    // default constructor created for rule of three
     BigInt(){};
     /// @brief constructor that inserts an integer into BigInt
     BigInt(const int someInt);
-    // ~BigInt();
 
     bool operator>(const BigInt& rhs) const;
     bool operator>=(const BigInt& rhs) const;
