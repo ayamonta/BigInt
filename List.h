@@ -80,10 +80,6 @@ class List
     bool deleteItem(T item);
     void deleteFront();
     void deleteBack();
-    // Node<T>*& front();
-    // Node<T>*& back();
-    // const Node<T>* front() const;
-    // const Node<T>* back() const;
     /// @brief Returns true if list contains no nodes, otherwise returns false
     bool isEmpty() const;
     /// @brief Returns the number of nodes in the list
@@ -270,30 +266,6 @@ inline const Node<T>* Node<T>::prev() const
 {
     return m_prev;
 }
-
-// template <class T>
-// inline Node<T>*& List<T>::front()
-// {
-//     return List<T>::m_head;
-// }
-
-// template <class T>
-// inline Node<T>*& List<T>::back()
-// {
-//     return List<T>::m_tail;
-// }
-
-// template <class T>
-// inline const Node<T>* List<T>::front() const
-// {
-//     return List<T>::m_head;
-// }
-
-// template <class T>
-// inline const Node<T>* List<T>::back() const
-// {
-//     return List<T>::m_tail;
-// }
 
 template <class T>
 inline List<T>::List()
